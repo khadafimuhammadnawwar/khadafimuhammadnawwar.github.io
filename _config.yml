@@ -1,0 +1,4 @@
+title: "My Jekyll Site"
+description: "Sebuah proyek Jekyll"
+baseurl: "" # Jika ini untuk GitHub Pages, sesuaikan dengan repo
+url: "http://127.0.0.1:4000"
