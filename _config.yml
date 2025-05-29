@@ -1,0 +1,18 @@
+title: Home
+bseurl: ""
+url: "https://khadafimuhammadnawwar.github.io/"
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+  theme:
+
+  plugins:
+    -jekyll-feed
+    -jekyll-seo-tag
+    -jekyll-sitemap
+
+
+
+
