@@ -1,62 +1,19 @@
 ---
-layout : default 
-title : Blog
+layout: default
+title: Blog
 ---
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Blog</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-</head>
-<body>
-    <nav>
-    
-    <a href="/" >Home</a>
-    
-    <a href="/friends.html" >Friends</a>
-    
-    <a href="/blog.html"  class="current" >Blog</a>
-    
-</nav>
-
-    <h1>Blog</h1>
-
-<ul>
-    
-    
-        <li>
-        <a href="/2025/03/20/Html-Link-dan-Lists.html">📝HTML Link dan Lists</a>
-        <p>20 Mar 2025</p>
-        <p><hr />
-</p>
-    </li>
-    
-        <li>
-        <a href="/2025/03/13/Belajar-Layout-dan-Navigation.html">Layout dan Navigasi</a>
-        <p>13 Mar 2025</p>
-        <p><hr />
-</p>
-    </li>
-    
-        <li>
-        <a href="/2025/03/06/Belajar-Markdown-&-HTML.html">Belajar Markdown & HTML</a>
-        <p>06 Mar 2025</p>
-        <p><hr />
-</p>
-    </li>
-    
-        <li>
-        <a href="/2025/02/20/Instalasi-Ruby-dan-Jekyll.html">Panduan Instalasi Ruby dan Jekyll</a>
-        <p>20 Feb 2025</p>
-        <p><hr />
-</p>
-    </li>
-    
-</ul>
-
-
-
-
-</body>
-</html>
+<div class="blog-container">
+  <h1 class="blog-title">Blog</h1>
+  <h2 class="blog-subtitle">Kumpulan Artikel</h2>
+  <ul>
+    {% for post in site.posts %}
+    <article class="blog-posts">
+      <h2 class="blog-card">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+      <p class="post-meta">{{ post.date | date: "%d %b %Y" }}</p>
+    </article>
+    {% endfor %}
+  </ul>
+</div>

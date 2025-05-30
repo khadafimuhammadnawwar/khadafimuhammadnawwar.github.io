@@ -1,3 +1,3 @@
 function myFunction() {
-    alert("Re Zero Adalah Anime Isekai Terbaik");
+    alert("Selamat datang di website saya");
 }
